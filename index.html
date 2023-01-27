@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <div style="display: flex;" class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom: auto;">
         <div class="container-fluid">
             <div class="container-fluid">
                 <img style="margin-left: -2px;" src="/images/Content.svg" alt="chemical">
@@ -50,7 +49,7 @@
           </div>
         </div>
       </nav>
-        <nav style="width: 15%;" class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav style="width: 15%;margin-bottom: auto;" class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="container-fluid">
                     settings
@@ -112,7 +111,7 @@
                     <h3>Personal Info</h3>
                     <h6>Update your photo and personal details</h6>
                 </div>
-                <form style="width: 800px; margin-left: 75px;border:solid rgba(255, 255, 255, 0.729);" class="row g-3">
+                <form style="width: 800px; margin-left: 75px;" class="row g-3 form-control">
                     <div class="col-md-6">
                       <label for="inputEmail4" class="form-label">First Name</label>
                       <input type="email" class="form-control" id="inputEmail4">
@@ -141,41 +140,69 @@
                     </div>
                 </form>
             </div>
-            <div class="container-fluid"style="display: flex;">
+            <div style="display: flex; margin-top:50px;">
                 <div>
-                    <h3>Personal Info</h3>
-                    <h6>Update your photo and personal details</h6>
+                    <h3>Personal</h3>
+                    <h6>Update your portfolio and bio</h6>
                 </div>
-                <form style="width: 800px; margin-left: 75px;" class="row g-3">
-                    <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">First Name</label>
-                      <input type="email" class="form-control" id="inputEmail4">
+                <form style="width: 800px; margin-left: 75px;" class="form-contol">
+                    <div class="form-check form-switch form-control gap-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Available for projects <br>
+                            I’m open and available for freelance work.</label>
                     </div>
-                    <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Last Name</label>
-                      <input type="password" class="form-control" id="inputPassword4">
+                  <div class="col-mb-3 justify-content-md-end">
+                    <label for="basic-url" class="form-label">UserName</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon3">untitledui.com/</span>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                     </div>
-                    <div class="col-12">
-                      <label for="inputAddress" class="form-label">Email Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="">
-                    </div>
-                    <div style="display: flex;"class="col-md-12">
-                        <img style="height: 64px; width: 64px;" src="/images/Avatar (1).svg" alt="">
-                        <div class="container-fluid">
-                            <img style="margin-left: 265px;"src="/images/Featured icon.svg" alt="">
-                            <h6 style="margin-left: 167px;">click to upload or drag and drop</h6>
-                            <h6 style="margin-left: 140px;">SVG, PNG, JPG or GIF (max. 800x400px)</h6>
+                  </div>
+                    <div class="mb-3">
+                        <label for="basic-url" class="form-label">Website</label>
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon3">https://</span>
+                          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                         </div>
                     </div>
-                    <div style="margin-top: 15px;"class="col-12">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-outline-secondary me-md-2" type="button">Cancel</button>
-                            <button class="btn btn-secondary" type="button" style="background-color: blueviolet;">Save Changes</button>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Description</label>
+                            <input type="text" class="form-control" id="input-group-text" placeholder="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
+                            ">
+                          </div>
+                        <div class=" col-3">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Regular</label>
+                            <select class="form-select" id="inlineFormSelectPref">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
                         </div>
-                    </div>
+                        <div class="col-12">
+                            <label for="inputState" class="form-label">Country</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-12">
+                            <label for="inputState" class="form-label">TimeZone</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+                        <div style="margin-top: 15px;"class="col-12">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-outline-secondary me-md-2" type="button">Cancel</button>
+                                <button class="btn btn-secondary" type="button" style="background-color: blueviolet;">Save Changes</button>
+                            </div>
+                        </div>
                 </form>
             </div>
           </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>

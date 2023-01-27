@@ -3,9 +3,9 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    .navbar .container-fluid{
+    /* .navbar .container-fluid{
         height: 100%;
-    }
+    } */
     .tt{
         margin: 3px;
     }
